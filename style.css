@@ -1,0 +1,35 @@
+@media only screen and (min-width: 992px) {
+    .navwrapper {
+        display: flex;
+        width: min(960px, 90%);
+        margin: auto;
+    }
+
+    /* !!I'll be honest, getting these buttons to the right was a challenge */
+    .navbar-nav {
+        justify-self: flex-end;
+        justify-content: end;
+        justify-items: end;
+        margin-right: 20px !important;
+        margin-left: auto;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navwrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        display: block !important;
+    }
+
+    .bootstrapWontLetMeFloat {
+        display: flex;
+    }
+}
