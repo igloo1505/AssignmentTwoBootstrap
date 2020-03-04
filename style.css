@@ -1,3 +1,20 @@
+.myContainer {
+    width: min(960px, 90%);
+    margin: auto;
+    padding-top: 30px;
+}
+
+img {
+    object-fit: contain;
+    padding: 20px;
+    /* display: flex; */
+    /* position: fixed; */
+}
+
+.content {
+    /* display: flex; */
+}
+
 @media only screen and (min-width: 992px) {
     .navwrapper {
         display: flex;
