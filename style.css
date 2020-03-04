@@ -4,16 +4,32 @@
     padding-top: 30px;
 }
 
-img {
+.selfie {
     object-fit: contain;
     padding: 20px;
-    /* display: flex; */
-    /* position: fixed; */
 }
 
-.content {
-    /* display: flex; */
+.contactContainer {
+    height: calc(100vh - 54px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
+
+
+.card {
+    max-height: 300px;
+    max-width: 13rem;
+    margin: 15px;
+}
+
+.row {
+    justify-content: center;
+}
+
+
 
 @media only screen and (min-width: 992px) {
     .navwrapper {
@@ -21,6 +37,8 @@ img {
         width: min(960px, 90%);
         margin: auto;
     }
+
+
 
     /* !!I'll be honest, getting these buttons to the right was a challenge */
     .navbar-nav {
@@ -40,6 +58,15 @@ img {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    textarea {
+        border: thin solid black;
+    }
+
+    img {
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 
     .navbar {
